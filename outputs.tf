@@ -2,6 +2,6 @@ output "random_name" {
   value = random_pet.random_name.id
 }
 
-output "random_name" {
+output "echo" {
   value = rnull_resource.echo.id
 }
