@@ -3,5 +3,5 @@ output "random_name" {
 }
 
 output "echo" {
-  value = rnull_resource.echo.id
+  value = null_resource.echo.id
 }
