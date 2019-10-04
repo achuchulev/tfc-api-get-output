@@ -36,16 +36,16 @@ terraform {
 }
 ```
 
-### Set terraform variable in the TFC workspace
-
-- add a terraform variable
+### Set terraform variable in the TFC workspace via UI
 
 ```
 words_number = 4
 ```
 
 ```
-Note: You can do that also using tfe provider
+Note: You can do that also using tfe provider from CLI
+
+example:
 
 resource "tfe_variable" "test" {
   key          = "words_number"
@@ -55,16 +55,15 @@ resource "tfe_variable" "test" {
 }
 ```
 
-### Initialize backend
+### Initialize backend from CLI
 
 ```
 terraform init
 ```
 
-### Plan/Apply changes to generate some output
+### Apply changes to generate some output
 
 ```
-terraform plan
 terraform apply
 ```
 
