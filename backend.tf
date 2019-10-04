@@ -1,10 +1,10 @@
 terraform {
   backend "remote" {
     hostname = "app.terraform.io"
-    organization = "atanasc-2"
+    organization = "<ORGANIZATION>"
 
     workspaces {
-      name = "tfc-api-get-output"
+      name = "<WORKSPACE>"
     }
   }
 }
