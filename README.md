@@ -11,6 +11,16 @@ cd tfc-api-get-output
 
 ### Configure Terraform Cloud remote backend
 
+- create `.terraformrc` file and put TFC credentilas
+
+```
+credentials "app.terraform.io" {
+  
+  # TFE user token
+  token = "your_terraform_token"
+}
+```
+
 - backend.tf
 
 ```
@@ -26,11 +36,11 @@ terraform {
 }
 ```
 
-### Adjust `workspace_id` in order to set variables in the TFC workspace using `tfe` provider
-
-- main.tf
+### Set terraform variable in the TFC workspace
 
 ```
+Note: You can achieve that using tfe provider
+
 resource "tfe_variable" "test" {
   key          = "words_number"
   value        = "4"
