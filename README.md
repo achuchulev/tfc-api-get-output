@@ -11,7 +11,7 @@ cd tfc-api-get-output
 
 ### Configure Terraform Cloud remote backend
 
-- create `.terraformrc` [file](https://www.terraform.io/docs/commands/cli-config.html) and put TFC credentilas
+- create `.terraformrc` [file](https://www.terraform.io/docs/commands/cli-config.html) and put your TFC token
 
 ```
 credentials "app.terraform.io" {
@@ -37,6 +37,12 @@ terraform {
 ```
 
 ### Set terraform variable in the TFC workspace
+
+- add a terraform variable
+
+```
+words_number = 4
+```
 
 ```
 Note: You can achieve that using tfe provider
