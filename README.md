@@ -21,7 +21,7 @@ credentials "app.terraform.io" {
 }
 ```
 
-- backend.tf
+- Adjust `backend.tf`
 
 ```
 terraform {
@@ -76,12 +76,12 @@ terraform apply
 export TOKEN="your_terraform_cloud_token"
 ```
 
-2.	Get WS ID by ORG_name && WS name
+2. Get WS ID by ORG_name && WS name
 
 > example:
 
 ```
-$	curl \
+$ curl \
   --header "Authorization: Bearer $TOKEN" \
   --header "Content-Type: application/vnd.api+json" \
   https://app.terraform.io/api/v2/organizations/<ORGANIZATION>/workspaces/<WORKSPACE> | jq '.data | .id'
