@@ -3,7 +3,7 @@ resource "random_pet" "random_name" {
   separator = "-"
 }
 
-resource "null_resource" "printng-each-word" {
+resource "null_resource" "print-each-word" {
   count = var.words_number
   provisioner "local-exec" {
     command = "echo 'World #${count.index + 1} is ${element(split("-", random_pet.random_name.id), count.index)}!'"
