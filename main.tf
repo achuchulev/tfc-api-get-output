@@ -10,3 +10,10 @@ resource "null_resource" "echo" {
     command = "echo hello ${count.index + 1}!"
   }
 }
+
+resource "tfe_variable" "test" {
+  key          = "words_number"
+  value        = "4"
+  category     = "terraform"
+  workspace_id = "atanasc-2/tfc-api-get-output"
+}
