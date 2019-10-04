@@ -15,5 +15,5 @@ resource "tfe_variable" "test" {
   key          = "words_number"
   value        = "4"
   category     = "terraform"
-  workspace_id = "atanasc-2/tfc-api-get-output"
+  workspace_id = "${var.org}/${var.ws}"
 }
