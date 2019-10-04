@@ -2,14 +2,14 @@
 
 ## Create a Workspace on Terraform Cloud containing some declared [output](https://www.terraform.io/docs/configuration/outputs.html)
 
-### Get the repo
+#### Get the repo
 
 ```
 git clone https://github.com/achuchulev/tfc-api-get-output.git
 cd tfc-api-get-output
 ```
 
-### Configure Terraform Cloud remote backend
+#### Configure Terraform Cloud remote backend
 
 - create `.terraformrc` [file](https://www.terraform.io/docs/commands/cli-config.html) and put your TFC token
 
@@ -36,15 +36,13 @@ terraform {
 }
 ```
 
-### Set terraform variable in the TFC workspace via UI
+#### Set terraform variable in the TFC workspace via UI
 
 ```
 words_number = 4
 ```
 
-```
-Note: You can do that also using tfe provider from CLI
-```
+`Note: You can do that also using tfe provider from CLI`
 
 example:
 
@@ -57,13 +55,13 @@ resource "tfe_variable" "test" {
 }
 ```
 
-### Initialize backend from CLI
+#### Initialize backend from CLI
 
 ```
 terraform init
 ```
 
-### Apply changes to generate some output
+#### Apply changes to generate some output
 
 ```
 terraform apply
