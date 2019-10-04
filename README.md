@@ -72,12 +72,10 @@ terraform apply
 1. Export your TFC token
 
 ```
-export TOKEN="your_terraform_cloud_token"
+$ export TOKEN="your_terraform_cloud_token"
 ```
 
 2. Get WS ID by ORG_name && WS name
-
-> example:
 
 ```
 $ curl \
@@ -92,8 +90,6 @@ $ curl \
 	
 3. Get current state version output ids
 
-  > example:
-  
   ```
   $ curl \
     --header "Authorization: Bearer $TOKEN" \
@@ -138,9 +134,7 @@ $ curl \
   ```
   
 4. Get attributes of specific output
-   
-  > examples:
-  
+
   ```
   $ curl \
     --header "Authorization: Bearer $TOKEN" \
