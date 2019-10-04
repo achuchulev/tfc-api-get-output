@@ -44,9 +44,11 @@ words_number = 4
 
 ```
 Note: You can do that also using tfe provider from CLI
+```
 
 example:
 
+```
 resource "tfe_variable" "test" {
   key          = "words_number"
   value        = "4"
