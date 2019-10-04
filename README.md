@@ -1,4 +1,4 @@
-# Example on how to get Terraform Cloud outputs via API
+# Get an output of a Terraform Cloud workspace via API
 
 ## Create a Workspace on Terraform Cloud containing some declared [output](https://www.terraform.io/docs/configuration/outputs.html)
 
