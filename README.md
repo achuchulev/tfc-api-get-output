@@ -11,7 +11,7 @@ cd tfc-api-get-output
 
 ### Configure Terraform Cloud remote backend
 
-- create `.terraformrc` file and put TFC credentilas
+- create `.terraformrc` [file](https://www.terraform.io/docs/commands/cli-config.html) and put TFC credentilas
 
 ```
 credentials "app.terraform.io" {
