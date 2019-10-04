@@ -3,9 +3,9 @@ resource "random_pet" "random_name" {
   separator = "-"
 }
 
-resource "null_resource" "echo" {
+resource "null_resource" "printng-each-word" {
   count = var.words_number
   provisioner "local-exec" {
-    command = "echo World #${count.index + 1} is ${element(split("-", random_pet.random_name.id), count.index)}!"
+    command = "echo 'World #${count.index + 1} is ${element(split("-", random_pet.random_name.id), count.index)}!'"
   }
 }
