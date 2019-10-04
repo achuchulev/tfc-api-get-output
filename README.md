@@ -1,6 +1,6 @@
-# Sample repo to guide you on how to get Terraform Cloud outputs via API
+# Example on how to get Terraform Cloud outputs via API
 
-## Deploy
+## Create a Workspace on Terraform Cloud containing some declared [output](https://www.terraform.io/docs/configuration/outputs.html)
 
 ### Get the repo
 
@@ -45,7 +45,7 @@ words_number = 4
 ```
 
 ```
-Note: You can achieve that using tfe provider
+Note: You can do that also using tfe provider
 
 resource "tfe_variable" "test" {
   key          = "words_number"
