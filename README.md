@@ -1,6 +1,6 @@
 # Get an output of a Terraform Cloud workspace via API
 
-## Create a Workspace on Terraform Cloud containing some declared [output](https://www.terraform.io/docs/configuration/outputs.html)
+### Create a Workspace on Terraform Cloud containing some declared [output](https://www.terraform.io/docs/configuration/outputs.html)
 
 #### Get the repo
 
